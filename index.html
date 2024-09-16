@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><u>Calculator</u></h1>
+    <div class="Calculator">
+        <div class="display">
+            <input type="text" placeholder="0" id="inputBox">
+        </div>
+
+        <div class="button">
+            <table id="table">
+                <tr><td>
+                    <button id="bu1" onclick="clearResult()">AC</button>
+                    <button id="bu1" onclick="deleteResult()">DE</button>
+                    <button id="bu1" onclick="insertValue('%')">%</button>
+                    <button id="bu1" onclick="insertValue('/')">/</button>
+                </td></tr>
+                <tr><td>
+                    <button id="bu1" onclick="insertValue('7')">7</button>
+                    <button id="bu1" onclick="insertValue('8')">8</button>
+                    <button id="bu1" onclick="insertValue('9')">9</button>
+                    <button id="bu1" onclick="insertValue('*')">*</button>
+                </td></tr>
+                <tr><td>
+                    <button id="bu1" onclick="insertValue('4')">4</button>
+                    <button id="bu1" onclick="insertValue('5')">5</button>
+                    <button id="bu1" onclick="insertValue('6')">6</button>
+                    <button id="bu1" onclick="insertValue('-')">-</button>
+                </td></tr>
+                <tr><td>
+                    <button id="bu1" onclick="insertValue('1')">1</button>
+                    <button id="bu1" onclick="insertValue('2')">2</button>
+                    <button id="bu1" onclick="insertValue('3')">3</button>
+                    <button id="bu1" onclick="insertValue('+')">+</button>
+                </td></tr>
+                <tr><td>
+                    <button id="bu1" onclick="insertValue('00')">00</button>
+                    <button id="bu1" onclick="insertValue('0')">0</button>
+                    <button id="bu1" onclick="insertValue('.')">.</button>
+                    <button id="eq" onclick="calculate()">=</button>
+                </td></tr>
+            </table>
+        </div>
+    </div>
+<script src="calc.js"></script>
+</body>
+</html>
